@@ -88,7 +88,7 @@ if st.button("GENERATE IMAGE"):
         # QR generation
         qr = qrcode.QRCode(
     version=None,
-    box_size=10,   # FIX: prevent huge image crash
+    box_size=30,   # FIX: prevent huge image crash
     border=4,
     error_correction=qrcode.constants.ERROR_CORRECT_H,
 )
