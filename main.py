@@ -102,6 +102,7 @@ if st.button("GENERATE IMAGE"):
             pil_img = qr_img.get_image()
         except:
             pil_img = qr_img
+        qr.make(fit=True)
 
         # If still not real PIL image → force convert using numpy
         if not isinstance(pil_img, Image.Image):
